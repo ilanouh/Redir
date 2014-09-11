@@ -1,15 +1,9 @@
 # Create your views here.
 
 from django.http import Http404  
-from django.conf import settings
-from django.utils import translation
 from django.shortcuts import get_object_or_404
-from django.core.exceptions import ObjectDoesNotExist
-from django.views.generic import TemplateView, RedirectView
+from django.views.generic import RedirectView
 from .models import Redirect
-
-class HomeView(TemplateView):
-    template_name = "redir/home.html"
 
 
 class RedirView(RedirectView):
